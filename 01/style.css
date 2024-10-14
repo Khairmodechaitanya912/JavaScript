@@ -1,0 +1,129 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    text-transform: uppercase;
+    color: #ffff;
+  }
+
+  #form-section{
+    display: flex;
+    flex-direction: column;
+  }
+  .Form{
+    width: 500px;
+    background-color: #1b3f5e;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    padding: 20px;
+  }
+  .Form input{
+    padding: 6px;
+    font-size: 18px;
+    margin-top: 6px;
+    border-radius: 6px;
+    border: none;
+    outline: none;
+  }
+  .Form button{
+    padding: 6px;
+    font-size: 18px;
+    border-radius: 16px;
+    background-color: rgb(239, 197, 129);
+    border: none;
+  }
+
+  .Ticket {
+    width: 90%;
+    /* height: 60vh; */
+    margin: auto;
+    /* background-color: #1b3f5e; */
+  }
+
+  .ticket {
+    display: flex;
+    margin-top: 100px;
+    width: 100%;
+  }
+
+  .ticket-left {
+    background-color: #ffff;
+    width: 30%;
+    /* height: 53vh; */
+    padding: 30px 0px;
+    border-radius: 0px 50px 50px 0;
+  }
+
+  .sr-no,
+  .theater-no,
+  .seat-no,
+  .date,
+  .theater-name {
+    display: flex;
+    justify-content: center;
+  }
+
+  .sr-no,
+  .theater-name {
+    background-color: #1b3f5e;
+    color: #ffff;
+    height: 80px;
+    font-size: 26px;
+    text-align: center;
+    align-items: center;
+  }
+
+  .theater-name {
+    margin-top: 2px;
+  }
+  .movie-name{
+    display: flex;
+  }
+  .context-left,
+  .context-right {
+    color: #1b3f5e;
+  }
+
+  .context-left {
+    padding-top: 50px;
+  }
+
+  .context-right {
+    padding: 50px 0px 0px 50px;
+  }
+
+  .img-logo {
+    padding: 10px 0px;
+    text-align: center;
+  }
+
+  .context-left img {
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    border: 1px solid #1b3f5e;
+  }
+
+  .ticket-right {
+    background-color: #ffff;
+    width: 70%;
+    padding: 28px 0px;
+    border-radius: 50px 0px 0px 50px;
+    border-left: 20px dotted #1b3f5e;
+  }
+
+  .sr-no-right {
+    display: flex;
+  }
+
+  .info {
+    width: 400px;
+    font-size: 22px;
+    display: flex;
+    justify-content: space-between;
+  }
+  #ticket-section{
+    display: none;
+    flex-direction: column;
+  }

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Show</title>
+
+    <style>
+        section{
+            width: 80%;
+            margin: auto;
+        }
+        .img-section{
+            width: 50%;
+            margin: auto;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+        input{
+            margin-top: 50px;
+            padding: 10px;
+            font-size: 18px;
+        }
+        .btn{
+            font-size: 18px;
+            width: 160px;
+            padding: 10px;
+            border-radius: 10px;
+            background-color: royalblue;
+            color: whitesmoke;
+            border: none;
+        }
+        .box-container{
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        .box img{
+            width: 200px;
+            height: 200px;
+        }
+    </style>
+</head>
+<body>
+    <section>
+      <div class="img-section">
+        <input type="text" placeholder="Insert Image URL">
+        <button class="btn" onclick="showImage()">Show Image</button>
+        <div class="box-container">
+
+        </div>
+      </div>
+    </section>
+
+    <script>
+        function showImage(){
+            let imgpath = document.getElementsByTagName('input')[0].value
+
+            let boxcontainer = document.querySelector(".box-container")
+            let box = document.createElement('div')
+            let img = document.createElement('img')
+
+            box.classList.add('box')
+            img.src = imgpath
+            box.appendChild(img)
+            boxcontainer.appendChild(box)
+
+        }
+
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,73 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+section{
+    width: 80%;
+    margin: auto;
+}
+.form{
+    width: 40%;
+    margin: auto;
+    border: 1px solid gray;
+    padding: 20px;
+}
+.data{
+    display: flex;
+    flex-direction: column;
+    margin-top: 14px;
+}
+.head{
+    /* margin-top: 60px; */
+    text-align: center;
+    font-size: 26px;
+}
+.btn{
+    width: 160px;
+    padding: 8px;
+    font-size: 16px;
+    border-radius: 10px;
+    border: none;
+    background-color: royalblue;
+    color: whitesmoke;
+    align-self: center;
+}
+.btn-logout{
+    align-self: flex-end;
+    background-color: rgb(196, 107, 107);
+}
+input{
+    padding: 8px;
+    font-size: 16px;
+    border-radius: 8px;
+    outline: none;
+}
+label{
+    font-size: 20px;
+}
+.login{
+    margin-top: 50px;
+}
+.data-img{
+    width: 200px;
+    height: 200px;
+}
+img{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    align-self: center;
+}
+.data-info{
+    text-align: center;
+    margin-top: 20px;
+}
+#register-section{
+    display: flex;
+}
+#login-section{
+    display: none;
+}
+#profile-section{
+    display: none;
+}
